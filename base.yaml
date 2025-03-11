@@ -1,0 +1,15 @@
+num_rounds: 10
+num_clients: 3
+batch_size: 32
+learning_rate: 0.01
+momentum: 0.9
+privacy:
+  enable_dp: True
+  noise_level: 0.1  # Gaussian noise strength
+server:
+  address: "127.0.0.1:8081"
+  min_clients: 3
+  fraction_fit: 1.0
+dataset:
+  image_size: 224
+  feature_dim: 224
